@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* react-phone-number-input overrides */
+.phone-input-wrapper {
+  @apply flex items-stretch gap-2;
+}
+
+.phone-input-wrapper .PhoneInputCountry {
+  @apply flex items-center gap-1.5 border border-gray-200 rounded-xl px-3 py-3 bg-white text-sm cursor-pointer transition-colors hover:border-gray-300;
+}
+
+.phone-input-wrapper .PhoneInputCountrySelect {
+  @apply absolute opacity-0 inset-0 cursor-pointer;
+}
+
+.phone-input-wrapper .PhoneInputCountryIcon {
+  @apply flex-shrink-0;
+}
+
+.phone-input-wrapper .PhoneInputInput {
+  @apply flex-1 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition-colors duration-150;
+}
+
+.phone-input-wrapper .PhoneInputInput:focus {
+  @apply border-brand-blue ring-2 ring-brand-blue/10;
+}
+
+.phone-input-wrapper.error .PhoneInputInput {
+  @apply border-red-400;
+}
