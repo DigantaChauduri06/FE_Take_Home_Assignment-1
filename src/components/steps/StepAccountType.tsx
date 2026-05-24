@@ -18,9 +18,9 @@ export function StepAccountType({ formData, errors, onChange, onClearError }: Pr
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h2 className="text-xl font-semibold text-navy-900 leading-snug">
+        <h2 className="text-xl font-normal text-navy-900 leading-snug">
           To join us tell us{' '}
-          <span className="font-extrabold">what type of account</span>
+          <span className="font-medium">what type of account</span>
           {' '}you are opening
         </h2>
       </div>

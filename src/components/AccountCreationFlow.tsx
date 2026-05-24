@@ -64,7 +64,7 @@ export function AccountCreationFlow() {
 
   return (
     <div className="min-h-screen bg-[#F0F4FF] flex items-center justify-center p-4 sm:p-8">
-      <div className="w-full max-w-4xl grid lg:grid-cols-[2fr_3fr] rounded-2xl overflow-hidden shadow-card-lg min-h-[540px]">
+      <div className="w-full max-w-[70rem] grid lg:grid-cols-[2fr_3fr] rounded-2xl overflow-hidden min-h-[540px]">
         <LeftPanel />
 
         <RightPanel

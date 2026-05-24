@@ -21,7 +21,7 @@ export function RightPanel({
   hideNavigation = false,
 }: RightPanelProps) {
   return (
-    <div className="flex flex-col bg-white min-h-full overflow-hidden">
+    <div className="flex flex-col bg-white min-h-full overflow-hidden shadow-card-lg rounded-2xl h-[695px] w-[550px]">
       <ProgressBar percent={progressPercent} />
 
       <div className="flex flex-col flex-1 px-8 sm:px-12 py-10 overflow-hidden">
